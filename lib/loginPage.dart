@@ -91,10 +91,18 @@ SizedBox(
     child: Text('Login'),
   ),
 ),
-// ...existing code...
+   SizedBox(height: 20,),
+   Text('Don\'t have an account?', style: TextStyle(fontSize: 15)),
+            TextButton(
+              onPressed: () {
+                // Handle sign up action
+              },
+              child: Text('Sign Up', style: TextStyle(color: Colors.blue)),
+            ),
               SizedBox(height: 20),
-              Text('Or continue with', style: TextStyle(fontSize: 15)),
+              Text('or continue with', style: TextStyle(fontSize: 15)),
               SizedBox(height: 10),
+              SizedBox(height: 50,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
