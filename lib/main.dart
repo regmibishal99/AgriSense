@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: AnimatedSplashScreen(
-        splash: Image.asset('assets/images/dhanko bala.jpg'),
+        splash: Image.asset('assets/images/dhan.jpg'),
         duration: 3000,
         splashTransition: SplashTransition.scaleTransition,
         backgroundColor: Colors.white,
