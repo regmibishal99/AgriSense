@@ -1,3 +1,4 @@
+import 'package:agri_sense/SignUppage.dart';
 import 'package:flutter/material.dart';
 
 class Loginpage extends StatefulWidget {
@@ -86,7 +87,7 @@ SizedBox(
       padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
     ),
     onPressed: () {
-      // Handle login action
+    
     },
     child: Text('Login'),
   ),
@@ -95,7 +96,7 @@ SizedBox(
    Text('Don\'t have an account?', style: TextStyle(fontSize: 15)),
             TextButton(
               onPressed: () {
-                // Handle sign up action
+               Navigator.push(context, MaterialPageRoute(builder: (context)=>Signuppage()));
               },
               child: Text('Sign Up', style: TextStyle(color: Colors.blue)),
             ),
