@@ -52,7 +52,7 @@ class _SignuppageState extends State<Signuppage> {
                   border: OutlineInputBorder(),
                 ),
               ),
-              SizedBox(height: 40), 
+              SizedBox(height: 10), 
               Text('Email',style:TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.w500,
@@ -106,22 +106,35 @@ SizedBox(
    Text('Don\'t have an account?', style: TextStyle(fontSize: 15)),
             TextButton(
               onPressed: () {
-                // Handle sign up action
+             Navigator.pop(context);
               },
               child: Text('Sign In', style: TextStyle(color: Colors.blue)),
             ),
-              SizedBox(height: 20),
-              Text('or continue with', style: TextStyle(fontSize: 15)),
-              SizedBox(height: 10),
-              SizedBox(height: 50,),
+         
+              SizedBox(height: 60,),
               
             Text('By signing up, you agree to our', style: TextStyle(fontSize: 15)),
-            TextButton(
-              onPressed: () {
-                // Handle terms and conditions
-              },
-              child: Text('Terms and Conditions', style: TextStyle(color: Colors.blue)),  
-            ),
+          TextButton(
+  onPressed: () {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text('Terms and Conditions'),
+        content: Text(
+          'Here are the terms and conditions of using this app. Please read them carefully before proceeding.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text('Close'),
+          ),
+        ],
+      ),
+    );
+  },
+  child: Text('Terms and Conditions', style: TextStyle(color: Colors.blue)),  
+),
+// ...existing code...
             ]
           ),
         ),
