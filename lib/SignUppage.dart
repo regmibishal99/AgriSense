@@ -134,7 +134,7 @@ SizedBox(
   },
   child: Text('Terms and Conditions', style: TextStyle(color: Colors.blue)),  
 ),
-// ...existing code...
+
             ]
           ),
         ),
